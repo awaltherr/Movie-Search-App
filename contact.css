@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #7c162e;
+    font-family: 'Chivo', sans-serif;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: #191528;
+}
+
+header .logo-text a {
+    font-size: 30px;
+    color: white;
+}
+
+.options {
+    display: inline;
+    margin-left: 50px;
+    font-size: 18px;
+    color: white;
+}
+
+.dropdown {
+    border-top: 1px solid rgba(255, 255, 255, 0.521);
+    height: 100px;
+    background-color: #5c162e;
+    position: relative;
+    font-family: 'Chivo', sans-serif;
+}
+
+.dropdown ul {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin-left: -350px;
+    width: 700px;
+}
+
+.dropdown li {
+    float: left;
+}
+
+.dropdown a {
+    display: block;
+    text-align: center;
+    width: 150px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.contact-form {
+    width: 30%;
+    padding: 20px;
+}
+
+.contact-header {
+    margin-bottom: 40px;
+    font-family: 'Chivo', sans-serif;
+    color: white;
+}
+
+.contact-header h1, h2 {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    margin: 20px 0;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-family: 'Krub', sans-serif;
+    color: white;
+}
+
+.form-control input, textarea {
+    display: block;
+    width: 90%;
+    padding: 12px;
+    resize: none;
+}
+
+.form-control i {
+    display: none;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+
+.form-control .helper {
+    display: none;
+}
+
+.submit-btn {
+    display: block;
+    padding: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.success i.fa-circle-check {
+    display: block;
+    color: green;
+}
+
+.error i.fa-circle-exclamation {
+    display: block;
+    color: red;
+}
+
+.error .helper {
+    display: block;
+    color: white;
+    font-family: 'Krub', sans-serif;
+    margin-top: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+@media screen and (max-width: 1023px) {
+
+    .dropdown li {
+        width: 33%;
+    }
+
+    .logo-text {
+        margin: 0 auto;
+    }
+
+    .nav li {
+        display: none;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .dropdown {
+        display: none;
+    }
+
+    .nav li {
+        display: inline;
+    }
+
+}

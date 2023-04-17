@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Krub&display=swap" rel="stylesheet">
+    <title>ImageGallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header-container">
+        <header>
+            <div class="logo-text">
+                <a href="index.html">ImageGallery</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a class="options" href="#">Favoriter</a>
+                    </li>
+                    <li>
+                        <a class="options" href="#">Om oss</a>
+                    </li>
+                    <li>
+                        <a class="options" href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="dropdown">
+            <ul>
+                <li>
+                    <a class="options" href="#">Favoriter</a>
+                </li>
+                <li>
+                    <a class="options" href="#">Om oss</a>
+                </li>
+                <li>
+                    <a class="options" href="contact.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <form class="contact-form" id="contact-form" autocomplete="off" action="thankyou.html" method="GET">
+            <div class="contact-header">
+                <h1>Kontakta oss</h1>
+                <h2>Vi älskar att hjälpa till!</h2>
+                <h2>Fyll gärna i formuläret nedan så ska vi gör allt vi kan för att hjälpa till.</h2>
+            </div>
+            <div class="form-control">
+                <label for="name">Namn*</label>
+                <input type="text" name="name" id="name" placeholder="Namn">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <p class="helper"></p>
+            </div>
+            <div class="form-control">
+                <label for="email">E-post*</label>
+                <input type="text" name="email" id="email" placeholder="E-post">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <p id="helper" class="helper"></p>
+            </div>
+            <div class="form-control">
+                <label for="message">Meddelande*</label>
+                <textarea rows="10" id="message" placeholder="Aa"></textarea>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <p class="helper"></p>
+            </div>
+            <button type="submit" class="submit-btn">Skicka</button>
+        </form>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
